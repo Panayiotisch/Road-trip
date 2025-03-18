@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1b49befe2628a3c55f88dd649109f3b4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1b49befe2628a3c55f88dd649109f3b4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1b49befe2628a3c55f88dd649109f3b4 = L.map(
+                "map_1b49befe2628a3c55f88dd649109f3b4",
+                {
+                    center: [37.5, -119.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5ae52a6d683cf13c50d481be5b96c3d2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1b49befe2628a3c55f88dd649109f3b4);
+        
+    
+            var marker_cluster_4c52d946c75e1662a51d35a19352dd33 = L.markerClusterGroup(
+                {}
+            );
+            map_1b49befe2628a3c55f88dd649109f3b4.addLayer(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var marker_46db8bced58ff050112924cb6b4be585 = L.marker(
+                [37.6213, -122.379],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_2320a70b93c24dd777becca478d8effc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_46db8bced58ff050112924cb6b4be585.setIcon(icon_2320a70b93c24dd777becca478d8effc);
+        
+    
+        var popup_caeb2b6174007f5acb1f28536141108b = L.popup({"maxWidth": 350});
+
+        
+            var html_96a1a11259d0eda4a71b60f5dca084d7 = $(`<div id="html_96a1a11259d0eda4a71b60f5dca084d7" style="width: 100.0%; height: 100.0%;"><b>San Francisco International Airport (SFO)</b><br></div>`)[0];
+            popup_caeb2b6174007f5acb1f28536141108b.setContent(html_96a1a11259d0eda4a71b60f5dca084d7);
+        
+
+        marker_46db8bced58ff050112924cb6b4be585.bindPopup(popup_caeb2b6174007f5acb1f28536141108b)
+        ;
+
+        
+    
+    
+            marker_46db8bced58ff050112924cb6b4be585.bindTooltip(
+                `<div>
+                     San Francisco International Airport (SFO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7063720cec83aea314bcaa23642158eb = L.marker(
+                [36.6844, -121.8022],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_28d22192366106820d9009af76ed2fec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_7063720cec83aea314bcaa23642158eb.setIcon(icon_28d22192366106820d9009af76ed2fec);
+        
+    
+        var popup_87134ddfef25c79bbea389d6eca033ff = L.popup({"maxWidth": 350});
+
+        
+            var html_4e0928178be6dbe923d79b535c9ec26f = $(`<div id="html_4e0928178be6dbe923d79b535c9ec26f" style="width: 100.0%; height: 100.0%;"><b>Marina, CA</b><br></div>`)[0];
+            popup_87134ddfef25c79bbea389d6eca033ff.setContent(html_4e0928178be6dbe923d79b535c9ec26f);
+        
+
+        marker_7063720cec83aea314bcaa23642158eb.bindPopup(popup_87134ddfef25c79bbea389d6eca033ff)
+        ;
+
+        
+    
+    
+            marker_7063720cec83aea314bcaa23642158eb.bindTooltip(
+                `<div>
+                     Marina, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52618b0c9dd1a966a928b149353dc088 = L.marker(
+                [37.4636, -122.4286],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_bb5dc2204d1f2cc3b1a043e803b446d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_52618b0c9dd1a966a928b149353dc088.setIcon(icon_bb5dc2204d1f2cc3b1a043e803b446d4);
+        
+    
+        var popup_cb099041c9c5c175aebc072be64aba23 = L.popup({"maxWidth": 350});
+
+        
+            var html_495ea53f2e132d1631ff3be480a6b68d = $(`<div id="html_495ea53f2e132d1631ff3be480a6b68d" style="width: 100.0%; height: 100.0%;"><b>Half Moon Bay, CA (Optional Stop)</b><br></div>`)[0];
+            popup_cb099041c9c5c175aebc072be64aba23.setContent(html_495ea53f2e132d1631ff3be480a6b68d);
+        
+
+        marker_52618b0c9dd1a966a928b149353dc088.bindPopup(popup_cb099041c9c5c175aebc072be64aba23)
+        ;
+
+        
+    
+    
+            marker_52618b0c9dd1a966a928b149353dc088.bindTooltip(
+                `<div>
+                     Half Moon Bay, CA (Optional Stop)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93e85acb860aae4af453ada458042c93 = L.marker(
+                [36.5552, -121.9233],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_b04a3a6cba4ea73ca6550d17dee278b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_93e85acb860aae4af453ada458042c93.setIcon(icon_b04a3a6cba4ea73ca6550d17dee278b0);
+        
+    
+        var popup_7961b316945c4ab973f4bcc733da1f7d = L.popup({"maxWidth": 350});
+
+        
+            var html_bcf0598e4acede1c033d6079d5f8f1df = $(`<div id="html_bcf0598e4acede1c033d6079d5f8f1df" style="width: 100.0%; height: 100.0%;"><b>Carmel-by-the-Sea, CA (Optional Stop)</b><br></div>`)[0];
+            popup_7961b316945c4ab973f4bcc733da1f7d.setContent(html_bcf0598e4acede1c033d6079d5f8f1df);
+        
+
+        marker_93e85acb860aae4af453ada458042c93.bindPopup(popup_7961b316945c4ab973f4bcc733da1f7d)
+        ;
+
+        
+    
+    
+            marker_93e85acb860aae4af453ada458042c93.bindTooltip(
+                `<div>
+                     Carmel-by-the-Sea, CA (Optional Stop)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8daefd5e6f02c70c1e0a8072496a633 = L.marker(
+                [36.3615, -121.8563],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_44cc4fc9c22bbbc57b2e03d2f07d3f69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_d8daefd5e6f02c70c1e0a8072496a633.setIcon(icon_44cc4fc9c22bbbc57b2e03d2f07d3f69);
+        
+    
+        var popup_b75b6d4c99023d3ff0f8553d531fca2c = L.popup({"maxWidth": 350});
+
+        
+            var html_f2a82b2366519d3a6ed318a6b9e995d5 = $(`<div id="html_f2a82b2366519d3a6ed318a6b9e995d5" style="width: 100.0%; height: 100.0%;"><b>Big Sur, CA</b><br></div>`)[0];
+            popup_b75b6d4c99023d3ff0f8553d531fca2c.setContent(html_f2a82b2366519d3a6ed318a6b9e995d5);
+        
+
+        marker_d8daefd5e6f02c70c1e0a8072496a633.bindPopup(popup_b75b6d4c99023d3ff0f8553d531fca2c)
+        ;
+
+        
+    
+    
+            marker_d8daefd5e6f02c70c1e0a8072496a633.bindTooltip(
+                `<div>
+                     Big Sur, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33da4bea521c7cdfa311cae790ae1058 = L.marker(
+                [36.1589, -121.6692],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_26db18fdfe38233044368266f3e1251a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_33da4bea521c7cdfa311cae790ae1058.setIcon(icon_26db18fdfe38233044368266f3e1251a);
+        
+    
+        var popup_d1f7ac7896de8db64211a0e57e3e7e9b = L.popup({"maxWidth": 350});
+
+        
+            var html_213331e16f78eae4d0beb9fc72ea5a4f = $(`<div id="html_213331e16f78eae4d0beb9fc72ea5a4f" style="width: 100.0%; height: 100.0%;"><b>McWay Falls, CA (Hidden Gem)</b><br></div>`)[0];
+            popup_d1f7ac7896de8db64211a0e57e3e7e9b.setContent(html_213331e16f78eae4d0beb9fc72ea5a4f);
+        
+
+        marker_33da4bea521c7cdfa311cae790ae1058.bindPopup(popup_d1f7ac7896de8db64211a0e57e3e7e9b)
+        ;
+
+        
+    
+    
+            marker_33da4bea521c7cdfa311cae790ae1058.bindTooltip(
+                `<div>
+                     McWay Falls, CA (Hidden Gem)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87ed45935d5bdf3e9927efd6cd980690 = L.marker(
+                [34.4208, -119.6982],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_4c18cb68fcc55a31f24eca38fd5f90fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_87ed45935d5bdf3e9927efd6cd980690.setIcon(icon_4c18cb68fcc55a31f24eca38fd5f90fd);
+        
+    
+        var popup_90e56fdc8e0bb86e9e2aeb7bf61bcc52 = L.popup({"maxWidth": 350});
+
+        
+            var html_5db52f84570d2ba0ad4b3652ab01d856 = $(`<div id="html_5db52f84570d2ba0ad4b3652ab01d856" style="width: 100.0%; height: 100.0%;"><b>Santa Barbara, CA</b><br></div>`)[0];
+            popup_90e56fdc8e0bb86e9e2aeb7bf61bcc52.setContent(html_5db52f84570d2ba0ad4b3652ab01d856);
+        
+
+        marker_87ed45935d5bdf3e9927efd6cd980690.bindPopup(popup_90e56fdc8e0bb86e9e2aeb7bf61bcc52)
+        ;
+
+        
+    
+    
+            marker_87ed45935d5bdf3e9927efd6cd980690.bindTooltip(
+                `<div>
+                     Santa Barbara, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ee0986b2cd44d7c832aa7332f6eb19d = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_4c29e661e57a3cfbb686cdfe3ff66ab8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_2ee0986b2cd44d7c832aa7332f6eb19d.setIcon(icon_4c29e661e57a3cfbb686cdfe3ff66ab8);
+        
+    
+        var popup_8dfeb71daed813a5caad3b8a6ea874e4 = L.popup({"maxWidth": 350});
+
+        
+            var html_6867a050b033150b70d281809c95e9d5 = $(`<div id="html_6867a050b033150b70d281809c95e9d5" style="width: 100.0%; height: 100.0%;"><b>Los Angeles, CA</b><br></div>`)[0];
+            popup_8dfeb71daed813a5caad3b8a6ea874e4.setContent(html_6867a050b033150b70d281809c95e9d5);
+        
+
+        marker_2ee0986b2cd44d7c832aa7332f6eb19d.bindPopup(popup_8dfeb71daed813a5caad3b8a6ea874e4)
+        ;
+
+        
+    
+    
+            marker_2ee0986b2cd44d7c832aa7332f6eb19d.bindTooltip(
+                `<div>
+                     Los Angeles, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc28b950ea408150e0631e1ad683f8a9 = L.marker(
+                [34.0259, -118.7798],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_c5b27ebef4ad95d917898b0887ec0c84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_cc28b950ea408150e0631e1ad683f8a9.setIcon(icon_c5b27ebef4ad95d917898b0887ec0c84);
+        
+    
+        var popup_123c21290741191b9a92d8dbaf69d38a = L.popup({"maxWidth": 350});
+
+        
+            var html_482e5ebf21bcf4826df5c7cf4a27b25d = $(`<div id="html_482e5ebf21bcf4826df5c7cf4a27b25d" style="width: 100.0%; height: 100.0%;"><b>Malibu, CA (Scenic Drive)</b><br></div>`)[0];
+            popup_123c21290741191b9a92d8dbaf69d38a.setContent(html_482e5ebf21bcf4826df5c7cf4a27b25d);
+        
+
+        marker_cc28b950ea408150e0631e1ad683f8a9.bindPopup(popup_123c21290741191b9a92d8dbaf69d38a)
+        ;
+
+        
+    
+    
+            marker_cc28b950ea408150e0631e1ad683f8a9.bindTooltip(
+                `<div>
+                     Malibu, CA (Scenic Drive)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e763c88ea432a8cfea8875fed72dace = L.marker(
+                [34.4257, -118.5971],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_949da6f25f46bf1cfa61983efbdfff1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_0e763c88ea432a8cfea8875fed72dace.setIcon(icon_949da6f25f46bf1cfa61983efbdfff1e);
+        
+    
+        var popup_4433c484be41e9ef5c39ac4180f1f51f = L.popup({"maxWidth": 350});
+
+        
+            var html_59f624982c282569518abfef57b02d05 = $(`<div id="html_59f624982c282569518abfef57b02d05" style="width: 100.0%; height: 100.0%;"><b>Six Flags Magic Mountain, CA</b><br></div>`)[0];
+            popup_4433c484be41e9ef5c39ac4180f1f51f.setContent(html_59f624982c282569518abfef57b02d05);
+        
+
+        marker_0e763c88ea432a8cfea8875fed72dace.bindPopup(popup_4433c484be41e9ef5c39ac4180f1f51f)
+        ;
+
+        
+    
+    
+            marker_0e763c88ea432a8cfea8875fed72dace.bindTooltip(
+                `<div>
+                     Six Flags Magic Mountain, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0c6abbe3a950e1c4216774a46b2234a = L.marker(
+                [32.7157, -117.1611],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_64105653061c706aed0ebdd9896c51d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_d0c6abbe3a950e1c4216774a46b2234a.setIcon(icon_64105653061c706aed0ebdd9896c51d4);
+        
+    
+        var popup_6bbaad1ee8c553cbff205c214230d3aa = L.popup({"maxWidth": 350});
+
+        
+            var html_db291692c3002f9072dd15bd29ac2a88 = $(`<div id="html_db291692c3002f9072dd15bd29ac2a88" style="width: 100.0%; height: 100.0%;"><b>San Diego, CA</b><br></div>`)[0];
+            popup_6bbaad1ee8c553cbff205c214230d3aa.setContent(html_db291692c3002f9072dd15bd29ac2a88);
+        
+
+        marker_d0c6abbe3a950e1c4216774a46b2234a.bindPopup(popup_6bbaad1ee8c553cbff205c214230d3aa)
+        ;
+
+        
+    
+    
+            marker_d0c6abbe3a950e1c4216774a46b2234a.bindTooltip(
+                `<div>
+                     San Diego, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be81a672fb4b65a8fc47e7ec142daeea = L.marker(
+                [32.8504, -117.2729],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_8d395aa168dabae4439248592c069f5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_be81a672fb4b65a8fc47e7ec142daeea.setIcon(icon_8d395aa168dabae4439248592c069f5d);
+        
+    
+        var popup_44da2fb8bdc5b2c7d7c912fe7986b447 = L.popup({"maxWidth": 350});
+
+        
+            var html_1397fc6bcc1056af1efcc9533054f277 = $(`<div id="html_1397fc6bcc1056af1efcc9533054f277" style="width: 100.0%; height: 100.0%;"><b>La Jolla Cove, CA (Hidden Gem)</b><br></div>`)[0];
+            popup_44da2fb8bdc5b2c7d7c912fe7986b447.setContent(html_1397fc6bcc1056af1efcc9533054f277);
+        
+
+        marker_be81a672fb4b65a8fc47e7ec142daeea.bindPopup(popup_44da2fb8bdc5b2c7d7c912fe7986b447)
+        ;
+
+        
+    
+    
+            marker_be81a672fb4b65a8fc47e7ec142daeea.bindTooltip(
+                `<div>
+                     La Jolla Cove, CA (Hidden Gem)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c4df177331174578ef95d10f344b26d = L.marker(
+                [36.1147, -115.1728],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_221aa0955d36a7ac73d05c87a3200417 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_4c4df177331174578ef95d10f344b26d.setIcon(icon_221aa0955d36a7ac73d05c87a3200417);
+        
+    
+        var popup_32d00e6c6ad9841ac345562a4d0d3937 = L.popup({"maxWidth": 350});
+
+        
+            var html_4a6961a6b73af93e6a004594da54c6dd = $(`<div id="html_4a6961a6b73af93e6a004594da54c6dd" style="width: 100.0%; height: 100.0%;"><b>Las Vegas, NV</b><br></div>`)[0];
+            popup_32d00e6c6ad9841ac345562a4d0d3937.setContent(html_4a6961a6b73af93e6a004594da54c6dd);
+        
+
+        marker_4c4df177331174578ef95d10f344b26d.bindPopup(popup_32d00e6c6ad9841ac345562a4d0d3937)
+        ;
+
+        
+    
+    
+            marker_4c4df177331174578ef95d10f344b26d.bindTooltip(
+                `<div>
+                     Las Vegas, NV
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_376f2b85eadd6d8991c958284744cb65 = L.marker(
+                [36.1069, -112.1129],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_494652a46d25757ebec6df7ff42d1607 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_376f2b85eadd6d8991c958284744cb65.setIcon(icon_494652a46d25757ebec6df7ff42d1607);
+        
+    
+        var popup_f01083f82aeaad33fb09c40f3aca8213 = L.popup({"maxWidth": 350});
+
+        
+            var html_b8cff8c5d5841f3019394102c32dcc78 = $(`<div id="html_b8cff8c5d5841f3019394102c32dcc78" style="width: 100.0%; height: 100.0%;"><b>Grand Canyon National Park, AZ</b><br></div>`)[0];
+            popup_f01083f82aeaad33fb09c40f3aca8213.setContent(html_b8cff8c5d5841f3019394102c32dcc78);
+        
+
+        marker_376f2b85eadd6d8991c958284744cb65.bindPopup(popup_f01083f82aeaad33fb09c40f3aca8213)
+        ;
+
+        
+    
+    
+            marker_376f2b85eadd6d8991c958284744cb65.bindTooltip(
+                `<div>
+                     Grand Canyon National Park, AZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d9c5d3aeb70b83bbb5fd1304845c07c = L.marker(
+                [36.5054, -117.0794],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_6d3977d83e3a0688db5d43154f5ff372 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_6d9c5d3aeb70b83bbb5fd1304845c07c.setIcon(icon_6d3977d83e3a0688db5d43154f5ff372);
+        
+    
+        var popup_c7e4309eab3b67ac2c165bee47243e88 = L.popup({"maxWidth": 350});
+
+        
+            var html_0d847541150d703f3da52c41fa3b1c91 = $(`<div id="html_0d847541150d703f3da52c41fa3b1c91" style="width: 100.0%; height: 100.0%;"><b>Death Valley National Park, CA (Scenic Drive)</b><br></div>`)[0];
+            popup_c7e4309eab3b67ac2c165bee47243e88.setContent(html_0d847541150d703f3da52c41fa3b1c91);
+        
+
+        marker_6d9c5d3aeb70b83bbb5fd1304845c07c.bindPopup(popup_c7e4309eab3b67ac2c165bee47243e88)
+        ;
+
+        
+    
+    
+            marker_6d9c5d3aeb70b83bbb5fd1304845c07c.bindTooltip(
+                `<div>
+                     Death Valley National Park, CA (Scenic Drive)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0b733c79ac83bdd0fdefdbf0b34ec9f = L.marker(
+                [37.0407, -122.0652],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_086acb11421d89a5b997066c32fc3ffb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_b0b733c79ac83bdd0fdefdbf0b34ec9f.setIcon(icon_086acb11421d89a5b997066c32fc3ffb);
+        
+    
+        var popup_7e71becdd75ea81befe51c8f20d68bde = L.popup({"maxWidth": 350});
+
+        
+            var html_9e18c604ebbb4b0a7b11450497ef5a67 = $(`<div id="html_9e18c604ebbb4b0a7b11450497ef5a67" style="width: 100.0%; height: 100.0%;"><b>Henry Cowell Redwoods State Park, CA</b><br></div>`)[0];
+            popup_7e71becdd75ea81befe51c8f20d68bde.setContent(html_9e18c604ebbb4b0a7b11450497ef5a67);
+        
+
+        marker_b0b733c79ac83bdd0fdefdbf0b34ec9f.bindPopup(popup_7e71becdd75ea81befe51c8f20d68bde)
+        ;
+
+        
+    
+    
+            marker_b0b733c79ac83bdd0fdefdbf0b34ec9f.bindTooltip(
+                `<div>
+                     Henry Cowell Redwoods State Park, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d8592799412f564bd479a569ea7740f = L.marker(
+                [37.3382, -121.8863],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_7bb8f58c5c8c851e647b1fc19e15f6c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_0d8592799412f564bd479a569ea7740f.setIcon(icon_7bb8f58c5c8c851e647b1fc19e15f6c5);
+        
+    
+        var popup_d44820dc5e98e452024b850ebbdb08e8 = L.popup({"maxWidth": 350});
+
+        
+            var html_d0a82600a45d77ae013bb4cf9699c9a3 = $(`<div id="html_d0a82600a45d77ae013bb4cf9699c9a3" style="width: 100.0%; height: 100.0%;"><b>San Jose, CA</b><br></div>`)[0];
+            popup_d44820dc5e98e452024b850ebbdb08e8.setContent(html_d0a82600a45d77ae013bb4cf9699c9a3);
+        
+
+        marker_0d8592799412f564bd479a569ea7740f.bindPopup(popup_d44820dc5e98e452024b850ebbdb08e8)
+        ;
+
+        
+    
+    
+            marker_0d8592799412f564bd479a569ea7740f.bindTooltip(
+                `<div>
+                     San Jose, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4547646d0b02c695a79eef2fcdfd47ff = L.marker(
+                [39.0968, -120.0324],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_277e636581088fd12a90dc6803f8968c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_4547646d0b02c695a79eef2fcdfd47ff.setIcon(icon_277e636581088fd12a90dc6803f8968c);
+        
+    
+        var popup_42b800a2fe526f5b8ad65ce46e63ba11 = L.popup({"maxWidth": 350});
+
+        
+            var html_914c1fcaa621a4699a519338628cac24 = $(`<div id="html_914c1fcaa621a4699a519338628cac24" style="width: 100.0%; height: 100.0%;"><b>Lake Tahoe, CA/NV</b><br></div>`)[0];
+            popup_42b800a2fe526f5b8ad65ce46e63ba11.setContent(html_914c1fcaa621a4699a519338628cac24);
+        
+
+        marker_4547646d0b02c695a79eef2fcdfd47ff.bindPopup(popup_42b800a2fe526f5b8ad65ce46e63ba11)
+        ;
+
+        
+    
+    
+            marker_4547646d0b02c695a79eef2fcdfd47ff.bindTooltip(
+                `<div>
+                     Lake Tahoe, CA/NV
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6081a26266d21a7b604f8bc5338872ad = L.marker(
+                [41.0116, -121.65],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_258e0b58d58cbbd9169b37234cd4580d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_6081a26266d21a7b604f8bc5338872ad.setIcon(icon_258e0b58d58cbbd9169b37234cd4580d);
+        
+    
+        var popup_c75c40fba4ba026e145a32852ec62cdb = L.popup({"maxWidth": 350});
+
+        
+            var html_c320d0eba969e2b8f58eb1f6ada50f5f = $(`<div id="html_c320d0eba969e2b8f58eb1f6ada50f5f" style="width: 100.0%; height: 100.0%;"><b>Burney Falls, CA (Hidden Gem)</b><br></div>`)[0];
+            popup_c75c40fba4ba026e145a32852ec62cdb.setContent(html_c320d0eba969e2b8f58eb1f6ada50f5f);
+        
+
+        marker_6081a26266d21a7b604f8bc5338872ad.bindPopup(popup_c75c40fba4ba026e145a32852ec62cdb)
+        ;
+
+        
+    
+    
+            marker_6081a26266d21a7b604f8bc5338872ad.bindTooltip(
+                `<div>
+                     Burney Falls, CA (Hidden Gem)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42a7adbe48f9652a925afe2ba6239603 = L.marker(
+                [41.2636, -122.0328],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_279ac5215cbf11f55ea79087c7050ea1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_42a7adbe48f9652a925afe2ba6239603.setIcon(icon_279ac5215cbf11f55ea79087c7050ea1);
+        
+    
+        var popup_8a3bdbc6a8f376f75966471813c53807 = L.popup({"maxWidth": 350});
+
+        
+            var html_cfcba6bd67d987fbb7bf6292d2014deb = $(`<div id="html_cfcba6bd67d987fbb7bf6292d2014deb" style="width: 100.0%; height: 100.0%;"><b>McCloud Falls, CA (Scenic Stop)</b><br></div>`)[0];
+            popup_8a3bdbc6a8f376f75966471813c53807.setContent(html_cfcba6bd67d987fbb7bf6292d2014deb);
+        
+
+        marker_42a7adbe48f9652a925afe2ba6239603.bindPopup(popup_8a3bdbc6a8f376f75966471813c53807)
+        ;
+
+        
+    
+    
+            marker_42a7adbe48f9652a925afe2ba6239603.bindTooltip(
+                `<div>
+                     McCloud Falls, CA (Scenic Stop)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ca3b9a1394a94eb163e5e29c26268df = L.marker(
+                [36.2394, -121.7772],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_25806c240f906617c2840a582a92d5f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_2ca3b9a1394a94eb163e5e29c26268df.setIcon(icon_25806c240f906617c2840a582a92d5f5);
+        
+    
+        var popup_b7ba65677a4bc07dad07a9963b3246b3 = L.popup({"maxWidth": 350});
+
+        
+            var html_475253b58cfceb7c30e653066525b59d = $(`<div id="html_475253b58cfceb7c30e653066525b59d" style="width: 100.0%; height: 100.0%;"><b>Pfeiffer Beach, CA (Purple Sand Beach)</b><br></div>`)[0];
+            popup_b7ba65677a4bc07dad07a9963b3246b3.setContent(html_475253b58cfceb7c30e653066525b59d);
+        
+
+        marker_2ca3b9a1394a94eb163e5e29c26268df.bindPopup(popup_b7ba65677a4bc07dad07a9963b3246b3)
+        ;
+
+        
+    
+    
+            marker_2ca3b9a1394a94eb163e5e29c26268df.bindTooltip(
+                `<div>
+                     Pfeiffer Beach, CA (Purple Sand Beach)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dd04ed88f0b3e82aba317d543388b23 = L.marker(
+                [36.8762, -111.5021],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_dad59c2607230308d5ce4f22cfc00417 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_4dd04ed88f0b3e82aba317d543388b23.setIcon(icon_dad59c2607230308d5ce4f22cfc00417);
+        
+    
+        var popup_c8c0d34cedc09e052894cb71a70eab30 = L.popup({"maxWidth": 350});
+
+        
+            var html_548cece4f739b071bbe99a47f4cf7985 = $(`<div id="html_548cece4f739b071bbe99a47f4cf7985" style="width: 100.0%; height: 100.0%;"><b>Horseshoe Bend, AZ (Best Sunset Spot)</b><br></div>`)[0];
+            popup_c8c0d34cedc09e052894cb71a70eab30.setContent(html_548cece4f739b071bbe99a47f4cf7985);
+        
+
+        marker_4dd04ed88f0b3e82aba317d543388b23.bindPopup(popup_c8c0d34cedc09e052894cb71a70eab30)
+        ;
+
+        
+    
+    
+            marker_4dd04ed88f0b3e82aba317d543388b23.bindTooltip(
+                `<div>
+                     Horseshoe Bend, AZ (Best Sunset Spot)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09e9de3fa9c0377d0b481117fa619328 = L.marker(
+                [36.4231, -114.5332],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_a468916ef6cd0e3d965611da559f50c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_09e9de3fa9c0377d0b481117fa619328.setIcon(icon_a468916ef6cd0e3d965611da559f50c4);
+        
+    
+        var popup_eaa3d0edad73ba950487066cc1fd92ac = L.popup({"maxWidth": 350});
+
+        
+            var html_30a9141b5a2f8697eb94aa34b061b304 = $(`<div id="html_30a9141b5a2f8697eb94aa34b061b304" style="width: 100.0%; height: 100.0%;"><b>Valley of Fire State Park, NV (Scenic Rock Formations)</b><br></div>`)[0];
+            popup_eaa3d0edad73ba950487066cc1fd92ac.setContent(html_30a9141b5a2f8697eb94aa34b061b304);
+        
+
+        marker_09e9de3fa9c0377d0b481117fa619328.bindPopup(popup_eaa3d0edad73ba950487066cc1fd92ac)
+        ;
+
+        
+    
+    
+            marker_09e9de3fa9c0377d0b481117fa619328.bindTooltip(
+                `<div>
+                     Valley of Fire State Park, NV (Scenic Rock Formations)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adbb727995524cc25887e6118e5805e9 = L.marker(
+                [39.0119, -120.1081],
+                {}
+            ).addTo(marker_cluster_4c52d946c75e1662a51d35a19352dd33);
+        
+    
+            var icon_db23bc71ab5ca2dccee824d0107a588b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_adbb727995524cc25887e6118e5805e9.setIcon(icon_db23bc71ab5ca2dccee824d0107a588b);
+        
+    
+        var popup_54d5c54ec92cd9812b2de234f911f2e8 = L.popup({"maxWidth": 350});
+
+        
+            var html_10197409796f45c75cf95259cb1f264b = $(`<div id="html_10197409796f45c75cf95259cb1f264b" style="width: 100.0%; height: 100.0%;"><b>Emerald Bay, Lake Tahoe (Best Photography Spot)</b><br></div>`)[0];
+            popup_54d5c54ec92cd9812b2de234f911f2e8.setContent(html_10197409796f45c75cf95259cb1f264b);
+        
+
+        marker_adbb727995524cc25887e6118e5805e9.bindPopup(popup_54d5c54ec92cd9812b2de234f911f2e8)
+        ;
+
+        
+    
+    
+            marker_adbb727995524cc25887e6118e5805e9.bindTooltip(
+                `<div>
+                     Emerald Bay, Lake Tahoe (Best Photography Spot)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
